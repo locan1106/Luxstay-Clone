@@ -379,28 +379,44 @@
 									<div class="location__item">
 										<a href="" class="location__item-link">
 											<img
-												src="./assets/images/location/location5.png"
+												src="./assets/images/location/location1.png"
 												alt=""
 												class="location__item-img" />
 											<div class="location__item-description">
-												<h3 class="location__item-description__name">
-													Đà Nẵng
-												</h3>
+												<h3 class="location__item-description__name">Hà Nội</h3>
 												<span class="location__item-description__capacity"
-													>903 Chỗ ở</span
+													>2901 Chỗ ở</span
 												>
 											</div>
 										</a>
 									</div>
 								</div>
+								<div class="col l-2-4 m-4 c-6">
+									<a href="" class="location__item-link">
+										<div class="location__item">
+											<img
+												src="./assets/images/location/location2.png"
+												alt=""
+												class="location__item-img" />
+											<div class="location__item-description">
+												<h3 class="location__item-description__name">
+													TP. Hồ Chí Minh
+												</h3>
+												<span class="location__item-description__capacity"
+													>2302 Chỗ ở</span
+												>
+											</div>
+										</div>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="nav-btn">
-						<button class="nav-btn-left">
+						<button class="nav-btn-left" id="prev-location-btn">
 							<i class="nav-btn-icon fa-regular fa-chevron-left"></i>
 						</button>
-						<button class="nav-btn-right">
+						<button class="nav-btn-right" id="next-location-btn">
 							<i class="nav-btn-icon fa-regular fa-chevron-right"></i>
 						</button>
 					</div>
@@ -416,40 +432,50 @@
 					Chỉ có tại Luxstay, hấp dẫn và hữu hạn, book ngay!
 				</p>
 
-				<div class="promotion-list mt-20">
-					<div class="grid wide">
-						<div class="row">
-							<div class="col l-4 m-12 c-12">
-								<div class="promotion-item">
-									<a href="" class="promotion-item-link">
-										<img
-											src="./assets/images/promotion/promotion1.jpg"
-											alt=""
-											class="promotion-item-img" />
-									</a>
+				<div class="promotion-box">
+					<div class="promotion-list mt-20">
+						<div class="grid wide">
+							<div class="row no-wrap">
+								<div class="col l-4 m-12 c-12">
+									<div class="promotion-item">
+										<a href="" class="promotion-item-link">
+											<img
+												src="./assets/images/promotion/promotion1.jpg"
+												alt=""
+												class="promotion-item-img" />
+										</a>
+									</div>
 								</div>
-							</div>
-							<div class="col l-4 m-12 c-12">
-								<div class="promotion-item">
-									<a href="" class="promotion-item-link">
-										<img
-											src="./assets/images/promotion/promotion2.jpg"
-											alt=""
-											class="promotion-item-img" />
-									</a>
+								<div class="col l-4 m-12 c-12">
+									<div class="promotion-item">
+										<a href="" class="promotion-item-link">
+											<img
+												src="./assets/images/promotion/promotion2.jpg"
+												alt=""
+												class="promotion-item-img" />
+										</a>
+									</div>
 								</div>
-							</div>
-							<div class="col l-4 m-12 c-12">
-								<div class="promotion-item">
-									<a href="" class="promotion-item-link">
-										<img
-											src="./assets/images/promotion/promotion3.jpg"
-											alt=""
-											class="promotion-item-img" />
-									</a>
+								<div class="col l-4 m-12 c-12">
+									<div class="promotion-item">
+										<a href="" class="promotion-item-link">
+											<img
+												src="./assets/images/promotion/promotion3.jpg"
+												alt=""
+												class="promotion-item-img" />
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
+					</div>
+					<div class="nav-btn">
+						<button class="nav-btn-left" id="prev-promotion-btn">
+							<i class="nav-btn-icon fa-regular fa-chevron-left"></i>
+						</button>
+						<button class="nav-btn-right" id="next-promotion-btn">
+							<i class="nav-btn-icon fa-regular fa-chevron-right"></i>
+						</button>
 					</div>
 				</div>
 			</div>
@@ -462,105 +488,148 @@
 					Những địa điểm thường đến mà Luxstay gợi ý dành cho bạn
 				</p>
 
-				<div class="suggestion-list mt-20">
-					<div class="grid wide">
-						<div class="row">
-							<div class="col l-3 m-4 c-12">
-								<div class="suggestion-item">
-									<a href="" class="suggestion-item-link">
-										<div class="suggestion-item-box-img">
-											<img
-												src="./assets/images/suggestion/suggest1.jpg"
-												alt=""
-												class="suggestion-item-img" />
-										</div>
-										<div class="suggestion-item-description">
-											<h2 class="suggestion-item-description__title">
-												Hà Nội - Vi vu ngoại thành
-											</h2>
-											<p class="suggestion-item-description__content">
-												Trải nghiệm không gian thoáng đãng cho chuyến đi ngay
-												gần Hà Nội
-											</p>
-										</div>
-									</a>
+				<div class="suggestion-box">
+					<div class="suggestion-list mt-20">
+						<div class="grid wide">
+							<div class="row no-wrap">
+								<div class="col l-3 m-4 c-12">
+									<div class="suggestion-item">
+										<a href="" class="suggestion-item-link">
+											<div class="suggestion-item-box-img">
+												<img
+													src="./assets/images/suggestion/suggest1.jpg"
+													alt=""
+													class="suggestion-item-img" />
+											</div>
+											<div class="suggestion-item-description">
+												<h2 class="suggestion-item-description__title">
+													Hà Nội - Vi vu ngoại thành
+												</h2>
+												<p class="suggestion-item-description__content">
+													Trải nghiệm không gian thoáng đãng cho chuyến đi ngay
+													gần Hà Nội
+												</p>
+											</div>
+										</a>
+									</div>
 								</div>
-							</div>
-							<div class="col l-3 m-4 c-12">
-								<div class="suggestion-item">
-									<a href="" class="suggestion-item-link">
-										<div class="suggestion-item-box-img">
-											<img
-												src="./assets/images/suggestion/suggest2.jpg"
-												alt=""
-												class="suggestion-item-img" />
-										</div>
-										<div class="suggestion-item-description">
-											<h2 class="suggestion-item-description__title">
-												Vũng Tàu - Biệt thự hồ bơi
-											</h2>
-											<p class="suggestion-item-description__content">
-												Những căn biệt thự có hồ bơi dành cho kỳ nghỉ của bạn
-												tại Vũng Tàu
-											</p>
-										</div>
-									</a>
+								<div class="col l-3 m-4 c-12">
+									<div class="suggestion-item">
+										<a href="" class="suggestion-item-link">
+											<div class="suggestion-item-box-img">
+												<img
+													src="./assets/images/suggestion/suggest2.jpg"
+													alt=""
+													class="suggestion-item-img" />
+											</div>
+											<div class="suggestion-item-description">
+												<h2 class="suggestion-item-description__title">
+													Vũng Tàu - Biệt thự hồ bơi
+												</h2>
+												<p class="suggestion-item-description__content">
+													Những căn biệt thự có hồ bơi dành cho kỳ nghỉ của bạn
+													tại Vũng Tàu
+												</p>
+											</div>
+										</a>
+									</div>
 								</div>
-							</div>
-							<div class="col l-3 m-4 c-12">
-								<div class="suggestion-item">
-									<a href="" class="suggestion-item-link">
-										<div class="suggestion-item-box-img">
-											<img
-												src="./assets/images/suggestion/suggest3.jpg"
-												alt=""
-												class="suggestion-item-img" />
-										</div>
-										<div class="suggestion-item-description">
-											<h2 class="suggestion-item-description__title">
-												Hà Nội - Nội thành lãng mạn
-											</h2>
-											<p class="suggestion-item-description__content">
-												Không gian lãng mạn danh cho cặp đôi tại trung tâm Hà
-												Nội
-											</p>
-										</div>
-									</a>
+								<div class="col l-3 m-4 c-12">
+									<div class="suggestion-item">
+										<a href="" class="suggestion-item-link">
+											<div class="suggestion-item-box-img">
+												<img
+													src="./assets/images/suggestion/suggest3.jpg"
+													alt=""
+													class="suggestion-item-img" />
+											</div>
+											<div class="suggestion-item-description">
+												<h2 class="suggestion-item-description__title">
+													Hà Nội - Nội thành lãng mạn
+												</h2>
+												<p class="suggestion-item-description__content">
+													Không gian lãng mạn danh cho cặp đôi tại trung tâm Hà
+													Nội
+												</p>
+											</div>
+										</a>
+									</div>
 								</div>
-							</div>
-							<div class="col l-3 m-4 c-12">
-								<div class="suggestion-item">
-									<a href="" class="suggestion-item-link">
-										<div class="suggestion-item-box-img">
-											<img
-												src="./assets/images/suggestion/suggest4.jpg"
-												alt=""
-												class="suggestion-item-img" />
-										</div>
-										<div class="suggestion-item-description">
-											<h2 class="suggestion-item-description__title">
-												Sài Gòn - Cần là có ngay
-											</h2>
-											<p class="suggestion-item-description__content">
-												Những căn homstay có 1 phòng ngủ tại Sài Gòn có thể đặt
-												nhanh chóng
-											</p>
-										</div>
-									</a>
+								<div class="col l-3 m-4 c-12">
+									<div class="suggestion-item">
+										<a href="" class="suggestion-item-link">
+											<div class="suggestion-item-box-img">
+												<img
+													src="./assets/images/suggestion/suggest4.jpg"
+													alt=""
+													class="suggestion-item-img" />
+											</div>
+											<div class="suggestion-item-description">
+												<h2 class="suggestion-item-description__title">
+													Sài Gòn - Cần là có ngay
+												</h2>
+												<p class="suggestion-item-description__content">
+													Những căn homstay có 1 phòng ngủ tại Sài Gòn có thể
+													đặt nhanh chóng
+												</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col l-3 m-4 c-12">
+									<div class="suggestion-item">
+										<a href="" class="suggestion-item-link">
+											<div class="suggestion-item-box-img">
+												<img
+													src="./assets/images/suggestion/suggest1.jpg"
+													alt=""
+													class="suggestion-item-img" />
+											</div>
+											<div class="suggestion-item-description">
+												<h2 class="suggestion-item-description__title">
+													Hà Nội - Vi vu ngoại thành
+												</h2>
+												<p class="suggestion-item-description__content">
+													Trải nghiệm không gian thoáng đãng cho chuyến đi ngay
+													gần Hà Nội
+												</p>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col l-3 m-4 c-12">
+									<div class="suggestion-item">
+										<a href="" class="suggestion-item-link">
+											<div class="suggestion-item-box-img">
+												<img
+													src="./assets/images/suggestion/suggest2.jpg"
+													alt=""
+													class="suggestion-item-img" />
+											</div>
+											<div class="suggestion-item-description">
+												<h2 class="suggestion-item-description__title">
+													Vũng Tàu - Biệt thự hồ bơi
+												</h2>
+												<p class="suggestion-item-description__content">
+													Những căn biệt thự có hồ bơi dành cho kỳ nghỉ của bạn
+													tại Vũng Tàu
+												</p>
+											</div>
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="nav-btn">
-						<button class="nav-btn-left">
+						<button class="nav-btn-left" id="prev-suggestion-btn">
 							<i class="nav-btn-icon fa-regular fa-chevron-left"></i>
 						</button>
-						<button class="nav-btn-right">
+						<button class="nav-btn-right" id="next-suggestion-btn">
 							<i class="nav-btn-icon fa-regular fa-chevron-right"></i>
 						</button>
 					</div>
 				</div>
-				<div class="row"></div>
 			</div>
 		</div>
 
@@ -632,46 +701,48 @@
 				<p class="content-description">
 					Đặt chỗ nhanh, thanh toán đơn giản, sử dụng dễ dàng
 				</p>
-				<div class="tutorial-list mt-20">
-					<div class="grid wide">
-						<div class="row">
-							<div class="col l-4 m-6 c-12">
-								<div class="tutorial-item">
-									<a href="" class="tutorial-item-link">
-										<img
-											src="./assets/images/tutorial/tutorial1.jpg"
-											alt=""
-											class="tutorial-item-img" />
-									</a>
+				<div class="tutorial-box">
+					<div class="tutorial-list mt-20">
+						<div class="grid wide">
+							<div class="row no-wrap">
+								<div class="col l-4 m-6 c-12">
+									<div class="tutorial-item">
+										<a href="" class="tutorial-item-link">
+											<img
+												src="./assets/images/tutorial/tutorial1.jpg"
+												alt=""
+												class="tutorial-item-img" />
+										</a>
+									</div>
 								</div>
-							</div>
-							<div class="col l-4 m-6 c-12">
-								<div class="tutorial-item">
-									<a href="" class="tutorial-item-link">
-										<img
-											src="./assets/images/tutorial/tutorial2.jpg"
-											alt=""
-											class="tutorial-item-img" />
-									</a>
+								<div class="col l-4 m-6 c-12">
+									<div class="tutorial-item">
+										<a href="" class="tutorial-item-link">
+											<img
+												src="./assets/images/tutorial/tutorial2.jpg"
+												alt=""
+												class="tutorial-item-img" />
+										</a>
+									</div>
 								</div>
-							</div>
-							<div class="col l-4 m-6 c-12">
-								<div class="tutorial-item">
-									<a href="" class="tutorial-item-link">
-										<img
-											src="./assets/images/tutorial/tutorial3.jpg"
-											alt=""
-											class="tutorial-item-img" />
-									</a>
+								<div class="col l-4 m-6 c-12">
+									<div class="tutorial-item">
+										<a href="" class="tutorial-item-link">
+											<img
+												src="./assets/images/tutorial/tutorial3.jpg"
+												alt=""
+												class="tutorial-item-img" />
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="nav-btn">
-						<button class="nav-btn-left">
+						<button class="nav-btn-left" id="prev-tutorial-btn">
 							<i class="nav-btn-icon fa-regular fa-chevron-left"></i>
 						</button>
-						<button class="nav-btn-right">
+						<button class="nav-btn-right" id="next-tutorial-btn">
 							<i class="nav-btn-icon fa-regular fa-chevron-right"></i>
 						</button>
 					</div>
@@ -731,6 +802,7 @@
 			</div>
 		</div>
 
+		<!-- footer -->
 		<footer class="mt-45">
 			<div class="grid wide">
 				<div class="row">

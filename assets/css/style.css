@@ -109,6 +109,7 @@ header {
 	cursor: pointer;
 	height: 100%;
 	padding: 0 30px;
+	transition: 0.4s;
 }
 
 .search__item::before {
@@ -129,6 +130,11 @@ header {
 	line-height: 100%;
 	font-size: 14px;
 	font-weight: 500;
+	transition: 0.4s;
+}
+
+.search__item:hover .search__item-title {
+	color: #ff6347;
 }
 
 .search-btn {
@@ -426,6 +432,10 @@ header {
 	z-index: 1;
 }
 
+.location__list .row {
+	transition: transform 0.5s ease-in-out;
+}
+
 .location__item {
 	position: relative;
 	overflow: hidden;
@@ -437,6 +447,8 @@ header {
 	height: 300px;
 	transition: 0.5s;
 	border-radius: 5px;
+	width: 100%;
+	object-fit: cover;
 }
 
 .location__item:hover .location__item-img {
@@ -494,6 +506,22 @@ header {
 	font-family: fontAwesome;
 }
 
+.promotion-box {
+	position: relative;
+}
+
+.promotion-list {
+	overflow-x: hidden;
+}
+
+.promotion-list .row {
+	transition: transform 0.5s ease-in-out;
+}
+
+.promotion-box .nav-btn {
+	display: none;
+}
+
 .promotion-item-img {
 	width: 100%;
 	border-radius: 5px;
@@ -504,8 +532,16 @@ header {
 	transform: translateY(-5px);
 }
 
-.suggestion-list {
+.suggestion-box {
 	position: relative;
+}
+
+.suggestion-list {
+	overflow-x: hidden;
+}
+
+.suggestion-list .row {
+	transition: transform 0.5s ease-in-out;
 }
 
 .suggestion-item-link {
@@ -604,8 +640,16 @@ header {
 	z-index: 1;
 }
 
-.tutorial-list {
+.tutorial-box {
 	position: relative;
+}
+
+.tutorial-list {
+	overflow-x: hidden;
+}
+
+.tutorial-list .row {
+	transition: transform 0.5s ease-in-out;
 }
 
 .tutorial-item-img {
@@ -617,6 +661,10 @@ header {
 
 .tutorial-item-img:hover {
 	transform: translateY(-5px);
+}
+
+.tutorial-box .nav-btn {
+	display: none;
 }
 
 .about {
@@ -665,6 +713,11 @@ header {
 
 .about-home {
 	width: 100%;
+}
+
+footer {
+	border-top: 1px solid #eee;
+	padding-top: 20px;
 }
 
 .footer__item-luxstay-img {
@@ -1043,6 +1096,26 @@ header {
 		font-weight: 400;
 		font-family: fontAwesome;
 	}
+
+	.promotion-box .nav-btn {
+		display: flex;
+	}
+
+	.promotion-item-img:hover {
+		transform: translateY(0);
+	}
+
+	.tutorial-box .nav-btn {
+		display: flex;
+	}
+
+	.tutorial-item-img:hover {
+		transform: translateY(0);
+	}
+
+	.explore-item:nth-child(1) {
+		margin-bottom: 12px;
+	}
 }
 
 /* Tablet */
@@ -1081,5 +1154,9 @@ header {
 
 	.more-info {
 		margin-bottom: 16px;
+	}
+
+	.explore-item {
+		margin-bottom: 12px;
 	}
 }

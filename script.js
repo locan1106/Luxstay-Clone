@@ -38,3 +38,257 @@ function showLanguageMobile() {
 	mobileLanguageList.classList.toggle("show-language");
 }
 mobileLanguage.addEventListener("click", showLanguageMobile);
+
+const nextLocationBtn = document.getElementById("next-location-btn");
+const prevLocationBtn = document.getElementById("prev-location-btn");
+
+let currentIndexLocation = 0;
+let lengthLocationList = 7;
+
+nextLocationBtn.addEventListener("click", () => {
+	const locationItemWidth = document.querySelector(
+		".location__list .col"
+	).offsetWidth;
+	const widthScreen = window.innerWidth;
+
+	currentIndexLocation++;
+
+	if (widthScreen >= 1024) {
+		if (currentIndexLocation > lengthLocationList - 5) {
+			currentIndexLocation = 0;
+		}
+	} else if (widthScreen >= 741) {
+		if (currentIndexLocation > lengthLocationList - 3) {
+			currentIndexLocation = 0;
+		}
+	} else {
+		if (currentIndexLocation > lengthLocationList - 2) {
+			currentIndexLocation = 0;
+		}
+	}
+
+	const slidesLocation = document.querySelector(".location__list .row");
+	slidesLocation.style.transform = `translateX(${
+		-currentIndexLocation * locationItemWidth
+	}px)`;
+});
+
+prevLocationBtn.addEventListener("click", () => {
+	const locationItemWidth = document.querySelector(
+		".location__list .col"
+	).offsetWidth;
+	const widthScreen = window.innerWidth;
+
+	currentIndexLocation--;
+
+	if (widthScreen >= 1024) {
+		if (currentIndexLocation < 0) {
+			currentIndexLocation = lengthLocationList - 5;
+		}
+	} else if (widthScreen >= 738) {
+		if (currentIndexLocation < 0) {
+			currentIndexLocation = lengthLocationList - 3;
+		}
+	} else {
+		if (currentIndexLocation < 0) {
+			currentIndexLocation = lengthLocationList - 2;
+		}
+	}
+
+	const slidesLocation = document.querySelector(".location__list .row");
+	slidesLocation.style.transform = `translateX(${
+		-currentIndexLocation * locationItemWidth
+	}px)`;
+});
+
+// Promotion butotn
+const nextPromotionItem = document.getElementById("next-promotion-btn");
+const prevPromotionItem = document.getElementById("prev-promotion-btn");
+
+let currentIndexPromotion = 0;
+let lengthPromotionList = 3;
+
+nextPromotionItem.addEventListener("click", () => {
+	const promotionItemWidth = document.querySelector(
+		".promotion-list .col"
+	).offsetWidth;
+	currentIndexPromotion++;
+	if (currentIndexPromotion === lengthPromotionList - 1) {
+		currentIndexPromotion = 0;
+	}
+
+	const slidesPromotion = document.querySelector(".promotion-list .row");
+
+	slidesPromotion.style.transform = `translateX(${
+		-currentIndexPromotion * promotionItemWidth
+	}px)`;
+});
+
+prevPromotionItem.addEventListener("click", () => {
+	const promotionItemWidth = document.querySelector(
+		".promotion-list .col"
+	).offsetWidth;
+	currentIndexPromotion--;
+	if (currentIndexPromotion === -1) {
+		currentIndexPromotion = lengthPromotionList - 1;
+	}
+
+	const slidesPromotion = document.querySelector(".promotion-list .row");
+
+	slidesPromotion.style.transform = `translateX(${
+		-currentIndexPromotion * promotionItemWidth
+	}px)`;
+});
+
+// suggestion
+const nextSuggestionItem = document.getElementById("next-suggestion-btn");
+const prevSuggestionItem = document.getElementById("prev-suggestion-btn");
+
+let currentIndexSuggestion = 0;
+let lengthSuggestionList = 6;
+
+nextSuggestionItem.addEventListener("click", () => {
+	const suggestionItemWidth = document.querySelector(
+		".suggestion-list .col"
+	).offsetWidth;
+	currentIndexSuggestion++;
+	const widthScreen = window.innerWidth;
+	if (widthScreen >= 1024) {
+		if (currentIndexSuggestion > lengthSuggestionList - 4) {
+			currentIndexSuggestion = 0;
+		}
+	} else if (widthScreen >= 741) {
+		if (currentIndexSuggestion > lengthSuggestionList - 3) {
+			currentIndexSuggestion = 0;
+		}
+	} else {
+		if (currentIndexSuggestion > lengthSuggestionList - 1) {
+			currentIndexSuggestion = 0;
+		}
+	}
+
+	const slidesSuggestion = document.querySelector(".suggestion-list .row");
+
+	slidesSuggestion.style.transform = `translateX(${
+		-currentIndexSuggestion * suggestionItemWidth
+	}px)`;
+});
+
+prevSuggestionItem.addEventListener("click", () => {
+	const suggestionItemWidth = document.querySelector(
+		".suggestion-list .col"
+	).offsetWidth;
+	currentIndexSuggestion--;
+	const widthScreen = window.innerWidth;
+	if (widthScreen >= 1024) {
+		if (currentIndexSuggestion === -1) {
+			currentIndexSuggestion = lengthSuggestionList - 4;
+		}
+	} else if (widthScreen >= 741) {
+		if (currentIndexSuggestion === -1) {
+			currentIndexSuggestion = lengthSuggestionList - 3;
+		}
+	} else {
+		if (currentIndexSuggestion === -1) {
+			currentIndexSuggestion = lengthSuggestionList - 1;
+		}
+	}
+
+	const slidesSuggestion = document.querySelector(".suggestion-list .row");
+
+	slidesSuggestion.style.transform = `translateX(${
+		-currentIndexSuggestion * suggestionItemWidth
+	}px)`;
+});
+
+// Tutorial
+const nextTutorialItem = document.getElementById("next-tutorial-btn");
+const prevTutorialItem = document.getElementById("prev-tutorial-btn");
+
+let currentIndexTutorial = 0;
+let lengthTutorialList = 3;
+
+nextTutorialItem.addEventListener("click", () => {
+	const tutorialItemWidth = document.querySelector(
+		".tutorial-list .col"
+	).offsetWidth;
+	currentIndexTutorial++;
+	const widthScreen = window.innerWidth;
+	if (widthScreen >= 741) {
+		if (currentIndexTutorial > lengthTutorialList - 2) {
+			currentIndexTutorial = 0;
+		}
+	} else {
+		if (currentIndexTutorial > lengthTutorialList - 1) {
+			currentIndexTutorial = 0;
+		}
+	}
+
+	const slidesTutorial = document.querySelector(".tutorial-list .row");
+
+	slidesTutorial.style.transform = `translateX(${
+		-currentIndexTutorial * tutorialItemWidth
+	}px)`;
+});
+
+prevTutorialItem.addEventListener("click", () => {
+	const tutorialItemWidth = document.querySelector(
+		".tutorial-list .col"
+	).offsetWidth;
+	currentIndexTutorial--;
+	const widthScreen = window.innerWidth;
+	if (widthScreen >= 741) {
+		if (currentIndexTutorial === -1) {
+			currentIndexTutorial = lengthTutorialList - 2;
+		}
+	} else {
+		if (currentIndexTutorial === -1) {
+			currentIndexTutorial = lengthTutorialList - 1;
+		}
+	}
+
+	const slidesTutorial = document.querySelector(".tutorial-list .row");
+
+	slidesTutorial.style.transform = `translateX(${
+		-currentIndexTutorial * tutorialItemWidth
+	}px)`;
+});
+
+window.addEventListener("resize", () => {
+	// Location
+	const locationItemWidth = document.querySelector(
+		".location__list .col"
+	).offsetWidth;
+	const slidesLocation = document.querySelector(".location__list .row");
+	slidesLocation.style.transform = `translateX(${
+		-currentIndexLocation * locationItemWidth
+	}px)`;
+
+	// Promotion
+	const promotionItemWidth = document.querySelector(
+		".promotion-list .col"
+	).offsetWidth;
+	const slidesPromotion = document.querySelector(".promotion-list .row");
+	slidesLocation.style.transform = `translateX(${
+		-currentIndexPromotion * promotionItemWidth
+	}px)`;
+
+	// Suggestion
+	const suggestionItemWidth = document.querySelector(
+		".suggestion-list .col"
+	).offsetWidth;
+	const slidesSuggestion = document.querySelector(".suggestion-list .row");
+	slidesSuggestion.style.transform = `translateX(${
+		-currentIndexSuggestion * suggestionItemWidth
+	}px)`;
+
+	// Tutorial
+	const tutorialItemWidth = document.querySelector(
+		".tutorial-list .col"
+	).offsetWidth;
+	const slidesTutorial = document.querySelector(".tutorial-list .row");
+
+	slidesTutorial.style.transform = `translateX(${
+		-currentIndexTutorial * tutorialItemWidth
+	}px)`;
+});
