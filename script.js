@@ -113,8 +113,10 @@ nextPromotionItem.addEventListener("click", () => {
 		".promotion-list .col"
 	).offsetWidth;
 	currentIndexPromotion++;
-	if (currentIndexPromotion === lengthPromotionList - 1) {
+	console.log(currentIndexPromotion);
+	if (currentIndexPromotion === lengthPromotionList) {
 		currentIndexPromotion = 0;
+		console.log("set lại = 0");
 	}
 
 	const slidesPromotion = document.querySelector(".promotion-list .row");
